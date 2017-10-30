@@ -1,0 +1,227 @@
+body, html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-width: 340px;
+}
+#intro {
+    /* The image used */
+    background-image: url("../media/intro-background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#footer {
+	padding: 40px;
+	text-align: center;
+}
+.footer-text {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	font-size: 12px;
+	color: white;
+}
+.banner {
+	text-align: center;
+	padding: 20px;
+	margin: 50px 0;
+	background-color: rgba(255, 245, 239, 0.7);
+}
+.banner h1 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 3em;
+}
+.banner h3 {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: normal;
+	margin: 10px 45px;
+}
+.banner button,
+.btn-send
+{
+	font-family: 'PT Sans', sans-serif;
+	background-color: #3fc9c5;
+	padding: 12px 40px;
+	margin: 20px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	border-radius: 2px;
+	border: none;
+}
+.banner button:hover,
+.btn-send:hover
+{
+	background-color: #ff8931;
+	cursor: pointer;
+}
+.banner button:focus,
+.btn-send:focus
+{
+	outline: none;
+}
+
+/* -- Media queries -- */
+@media screen and (max-width: 1000px) {
+	.banner h1 {
+		font-size: 2.6em;
+	}
+	.banner h3 {
+		font-size: 1em;
+	}
+	.banner button,
+	.btn-send
+	{
+		font-size: 1em;
+	}
+}
+/* -- Media queries -- */
+@media screen and (max-width: 765px) {
+	.banner {
+		padding: 20px 40px;
+	}
+	.banner h1 {
+		font-size: 2em;
+	}
+	.banner h3 {
+		font-size: 0.78em;
+	}
+	.banner button,
+	.btn-send
+	{
+		font-size: 1em;
+		padding: 10px 35px;
+	}
+}
+
+/* -- INTRO FORM -- */
+.overlay {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: hidden;
+	background-color: rgba(62, 63, 74, 0.95);
+}
+.close {
+	position: absolute;
+	top: -17px;
+	left: auto;
+	right: -17px;
+	width: 34px;
+	height: 34px;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	background-color: #000;
+	border: solid 2px #fff;
+	border-radius: 50px;
+	z-index: 2000;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.close:hover {
+	color: #666;
+	background: #ddd;
+}
+.close:before {
+	font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+	font-size: 30px;
+	line-height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	content: "\00d7";
+}
+.close:focus {
+	outline: none;
+}
+.prompt-form {
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 45px;
+	opacity: 0;
+}
+.prompt-form * {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: normal;
+}
+.prompt-form input[type=email],
+.prompt-form input[type=text]
+{
+	background-color: #f7f7f0;
+	font-size: 1em;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.prompt-form input[type=email]:focus,
+.prompt-form input[type=text]:focus
+{
+	outline: none;
+}
+
+/* -- Keyframes -- */
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+} 
+
+/* Standard syntax */ 
+@keyframes fade {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade_away {
+    from {opacity: 1;}
+    to   {opacity: 0;}
+} 
+
+/* Standard syntax */ 
+@keyframes fade_away {
+    from {opacity: 1;}
+    to   {opacity: 0;}
+}
+
+ /* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade_trans {
+    from {opacity: 0;-webkit-transform: scale(1.5)}
+    to   {opacity: 1;-webkit-transform: none;}
+} 
+
+/* Standard syntax */ 
+@keyframes fade_trans {
+    from {opacity: 0;transform: scale(1.5)}
+    to   {opacity: 1;transform: none;}
+}
+
+ /* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade_trans_away {
+    from {opacity: 1;-webkit-transform: none}
+    to   {opacity: 0;-webkit-transform: scale(0.5);}
+} 
+
+/* Standard syntax */ 
+@keyframes fade_trans_away {
+    from {opacity: 1;transform: none;}
+    to   {opacity: 0;transform: scale(0.5);}
+}

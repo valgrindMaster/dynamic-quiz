@@ -1,0 +1,197 @@
+body, html {
+	font-family: 'Lato', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#footer {
+	padding: 40px;
+	text-align: center;
+}
+.footer-text {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	font-size: 12px;
+	color: black;
+}
+.div-header {
+    background: #c0f7f9; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, #fff4d3, #c0f7f9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #fff4d3, #c0f7f9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #fff4d3, #c0f7f9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #fff4d3, #c0f7f9); /* Standard syntax (must be last) */
+	width: 100%;
+	height: 200px;
+}
+.div-header .left {
+	height: 100%;
+	width: 60%;
+	text-align: center;
+	float: left;
+}
+.div-header .right {
+	height: 100%;
+	width: 40%;
+	text-align: center;
+	float: right;
+}
+.div-header h1 {
+	font-weight: normal;
+	font-family: 'Lato', sans-serif;
+}
+.quiz-header {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+.quiz-header h1 {
+	color: #ff853f;
+	font-size: 25px;
+}
+.quiz-header-list {
+	width: 65%;
+	margin: 0 auto;
+	text-align: center;
+}
+.quiz-header-list ul li {
+	text-align: left;
+	list-style: none;
+    background: url('../media/point.png') left center no-repeat; 
+    padding-left: 30px; 
+    font-size: 20px;
+}
+.quiz-form {
+	width: 550px;
+	margin: 25px auto 250px auto;
+}
+.quiz-form h2 {
+	text-align: center;
+	font-weight: normal;
+}
+.quiz-form h2:after {
+    color: red;
+    content: '*';
+}
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid #c6c6c6;
+}
+/* When the radio button is checked, add a yellow background */
+.container input:checked ~ .checkmark {
+  background-color: #f2dc6f;
+}
+.btn-next {
+	font-family: 'PT Sans', sans-serif;
+	background-color: #3fc9c5;
+	padding: 10px 75px;
+	margin: 35px 2px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+	border-radius: 2px;
+	border: none;
+}
+.btn-next:hover {
+	background-color: #ff8931;
+	cursor: pointer;
+}
+.btn-next:focus {
+	outline: none;
+}
+
+.text-error {
+	font-size: 16px;
+	color: #ef6e47;
+	font-style: italic;
+}
+#formTextArea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+.w3-border {
+	max-width: 800px;
+	margin: 50px auto;
+	position: relative;
+}
+.w3-container {
+	height:24px;
+	opacity: 0.5;
+}
+.scoring-label {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	text-align: right;
+	width: 20%;
+	height: 24px;
+}
+#percent {
+	color: white;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	opacity: 1;
+}
+#pointer {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	right: 0;
+	top: 0;
+	left: 0;
+	border-top: 12px solid transparent;
+	border-left: 12px solid #ffe083;
+	border-bottom: 12px solid transparent;
+	-moz-transform: scale(0.999);
+	-webkit-backface-visibility: hidden;
+}
+@media screen and (max-width: 600px) {
+	#percent {
+		display: none;
+	}
+	.div-header {
+		min-height: 200px;
+		height: auto;
+	}
+	.div-header .right {
+		display: none;
+	}
+	.div-header .left {
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
